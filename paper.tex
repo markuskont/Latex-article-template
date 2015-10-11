@@ -1,0 +1,125 @@
+\documentclass[12pt, english]{article}
+%\documentclass[12pt, letterpaper, twoside, english]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+
+% Paragraph indention
+\usepackage{indentfirst}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+% Do not split section headers
+\usepackage[raggedright]{titlesec}
+
+% start section from new page
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+% Bibliography
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{db.bib}
+\AtBeginBibliography{\setcounter{maxnames}{10}}
+
+% Margins
+\usepackage[a4paper,margin=1in]{geometry}
+
+% Line spacing
+\usepackage{setspace}
+%\onehalfspacing
+\singlespace
+
+% Global redefinition of spacing in numbered lists
+\newenvironment{myenum}
+{ \begin{enumerate}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}     }
+{ \end{enumerate}                  } 
+
+% Global redefinition of spacing in bulleted lists
+\newenvironment{myitem}
+{ \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}     }
+{ \end{itemize}                  } 
+
+% To insert images
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+% To avoid images jumping around on pages
+\usepackage{float}
+
+% Table alternative row color
+\usepackage[table]{xcolor}
+\definecolor{lightgray}{gray}{0.9}
+ 
+\title{Essay}
+\author{
+	Markus Kont
+}
+\date{2015}
+ 
+\begin{document}
+ 
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\tableofcontents
+\newpage
+ 
+\section{Introduction}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis libero sed vehicula iaculis. Suspendisse laoreet nibh mauris, ac pulvinar purus venenatis vel. Vestibulum non nisl sed lacus pharetra blandit sed sed nisl. Nullam sapien enim, bibendum in tempor venenatis, porttitor convallis leo. Cras sollicitudin elit et turpis iaculis, nec malesuada quam ullamcorper. Nam faucibus eleifend urna eget elementum. Vivamus non bibendum mi.
+
+Aliquam vitae odio ac turpis euismod dapibus in non nibh. Etiam congue lobortis sapien, eleifend mollis lectus sodales in. Praesent ultricies blandit ullamcorper. Integer fermentum eu nisi vitae porta. In eu turpis faucibus, ullamcorper sem ut, maximus lacus. Pellentesque venenatis augue eget suscipit lobortis. Donec quis massa eget augue euismod maximus.
+
+Ut condimentum maximus tincidunt. Integer suscipit odio nisl, vitae suscipit massa accumsan sit amet. Curabitur pretium pharetra enim eu maximus. Nullam a convallis nulla. Praesent sollicitudin dignissim purus, sed hendrerit erat consequat et. Etiam odio eros, lacinia vitae mi nec, gravida placerat orci. Curabitur tincidunt ante in sodales pharetra. Nam et rutrum augue. Etiam aliquam, metus sit amet scelerisque vestibulum, augue metus congue mauris, vitae viverra mauris nisi sed erat. Praesent molestie fringilla enim non fringilla. Donec convallis ultricies ligula, nec elementum diam pharetra quis.
+
+Curabitur facilisis tellus eu ante dignissim, ultricies consectetur ex feugiat. Sed commodo tellus et lectus egestas, congue ornare odio finibus. Morbi quis massa lectus. Etiam non nisl fringilla, consectetur leo ut, mollis ligula. Maecenas maximus purus ac efficitur lacinia. Praesent tristique, leo ut rutrum placerat, magna dolor vehicula urna, ac faucibus orci velit vel purus. In nec congue turpis. Cras quam turpis, iaculis et fermentum at, aliquet suscipit ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In interdum hendrerit dolor ut euismod. Pellentesque eget gravida lectus. Morbi ut ex auctor, gravida dolor ut, sagittis sem. Nulla aliquet at quam et eleifend. Donec vel nibh at massa lobortis laoreet vitae sed velit. Praesent sagittis nunc id nisi malesuada luctus.
+
+Aenean nec tortor id mi maximus varius. Praesent eu neque imperdiet, suscipit tortor et, sollicitudin enim. Curabitur nisl elit, mollis sit amet erat id, euismod egestas purus. Pellentesque tempus et lectus ac sodales. Vestibulum semper arcu luctus viverra feugiat. Curabitur gravida tempus risus in consectetur. Vivamus laoreet congue feugiat. Praesent elementum in lorem vehicula sollicitudin. Integer et euismod felis, sit amet lobortis turpis. Praesent luctus tellus ultricies lobortis faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec non leo in turpis imperdiet vehicula ut sed risus. Integer posuere ornare libero. Integer et bibendum arcu, ac malesuada erat. Proin accumsan metus ut pellentesque laoreet. 
+
+\section{Section 1}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis libero sed vehicula iaculis. Suspendisse laoreet nibh mauris, ac pulvinar purus venenatis vel. Vestibulum non nisl sed lacus pharetra blandit sed sed nisl. Nullam sapien enim, bibendum in tempor venenatis, porttitor convallis leo. Cras sollicitudin elit et turpis iaculis, nec malesuada quam ullamcorper. Nam faucibus eleifend urna eget elementum. Vivamus non bibendum mi.
+
+Aliquam vitae odio ac turpis euismod dapibus in non nibh. Etiam congue lobortis sapien, eleifend mollis lectus sodales in. Praesent ultricies blandit ullamcorper. Integer fermentum eu nisi vitae porta. In eu turpis faucibus, ullamcorper sem ut, maximus lacus. Pellentesque venenatis augue eget suscipit lobortis. Donec quis massa eget augue euismod maximus.
+
+Ut condimentum maximus tincidunt. Integer suscipit odio nisl, vitae suscipit massa accumsan sit amet. Curabitur pretium pharetra enim eu maximus. Nullam a convallis nulla. Praesent sollicitudin dignissim purus, sed hendrerit erat consequat et. Etiam odio eros, lacinia vitae mi nec, gravida placerat orci. Curabitur tincidunt ante in sodales pharetra. Nam et rutrum augue. Etiam aliquam, metus sit amet scelerisque vestibulum, augue metus congue mauris, vitae viverra mauris nisi sed erat. Praesent molestie fringilla enim non fringilla. Donec convallis ultricies ligula, nec elementum diam pharetra quis.
+
+Curabitur facilisis tellus eu ante dignissim, ultricies consectetur ex feugiat. Sed commodo tellus et lectus egestas, congue ornare odio finibus. Morbi quis massa lectus. Etiam non nisl fringilla, consectetur leo ut, mollis ligula. Maecenas maximus purus ac efficitur lacinia. Praesent tristique, leo ut rutrum placerat, magna dolor vehicula urna, ac faucibus orci velit vel purus. In nec congue turpis. Cras quam turpis, iaculis et fermentum at, aliquet suscipit ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In interdum hendrerit dolor ut euismod. Pellentesque eget gravida lectus. Morbi ut ex auctor, gravida dolor ut, sagittis sem. Nulla aliquet at quam et eleifend. Donec vel nibh at massa lobortis laoreet vitae sed velit. Praesent sagittis nunc id nisi malesuada luctus.
+
+Aenean nec tortor id mi maximus varius. Praesent eu neque imperdiet, suscipit tortor et, sollicitudin enim. Curabitur nisl elit, mollis sit amet erat id, euismod egestas purus. Pellentesque tempus et lectus ac sodales. Vestibulum semper arcu luctus viverra feugiat. Curabitur gravida tempus risus in consectetur. Vivamus laoreet congue feugiat. Praesent elementum in lorem vehicula sollicitudin. Integer et euismod felis, sit amet lobortis turpis. Praesent luctus tellus ultricies lobortis faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec non leo in turpis imperdiet vehicula ut sed risus. Integer posuere ornare libero. Integer et bibendum arcu, ac malesuada erat. Proin accumsan metus ut pellentesque laoreet. 
+
+\subsection{Subsection 1}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis libero sed vehicula iaculis. Suspendisse laoreet nibh mauris, ac pulvinar purus venenatis vel. Vestibulum non nisl sed lacus pharetra blandit sed sed nisl. Nullam sapien enim, bibendum in tempor venenatis, porttitor convallis leo. Cras sollicitudin elit et turpis iaculis, nec malesuada quam ullamcorper. Nam faucibus eleifend urna eget elementum. Vivamus non bibendum mi.
+
+Aliquam vitae odio ac turpis euismod dapibus in non nibh. Etiam congue lobortis sapien, eleifend mollis lectus sodales in. Praesent ultricies blandit ullamcorper. Integer fermentum eu nisi vitae porta. In eu turpis faucibus, ullamcorper sem ut, maximus lacus. Pellentesque venenatis augue eget suscipit lobortis. Donec quis massa eget augue euismod maximus.
+
+Ut condimentum maximus tincidunt. Integer suscipit odio nisl, vitae suscipit massa accumsan sit amet. Curabitur pretium pharetra enim eu maximus. Nullam a convallis nulla. Praesent sollicitudin dignissim purus, sed hendrerit erat consequat et. Etiam odio eros, lacinia vitae mi nec, gravida placerat orci. Curabitur tincidunt ante in sodales pharetra. Nam et rutrum augue. Etiam aliquam, metus sit amet scelerisque vestibulum, augue metus congue mauris, vitae viverra mauris nisi sed erat. Praesent molestie fringilla enim non fringilla. Donec convallis ultricies ligula, nec elementum diam pharetra quis.
+
+Curabitur facilisis tellus eu ante dignissim, ultricies consectetur ex feugiat. Sed commodo tellus et lectus egestas, congue ornare odio finibus. Morbi quis massa lectus. Etiam non nisl fringilla, consectetur leo ut, mollis ligula. Maecenas maximus purus ac efficitur lacinia. Praesent tristique, leo ut rutrum placerat, magna dolor vehicula urna, ac faucibus orci velit vel purus. In nec congue turpis. Cras quam turpis, iaculis et fermentum at, aliquet suscipit ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In interdum hendrerit dolor ut euismod. Pellentesque eget gravida lectus. Morbi ut ex auctor, gravida dolor ut, sagittis sem. Nulla aliquet at quam et eleifend. Donec vel nibh at massa lobortis laoreet vitae sed velit. Praesent sagittis nunc id nisi malesuada luctus.
+
+Aenean nec tortor id mi maximus varius. Praesent eu neque imperdiet, suscipit tortor et, sollicitudin enim. Curabitur nisl elit, mollis sit amet erat id, euismod egestas purus. Pellentesque tempus et lectus ac sodales. Vestibulum semper arcu luctus viverra feugiat. Curabitur gravida tempus risus in consectetur. Vivamus laoreet congue feugiat. Praesent elementum in lorem vehicula sollicitudin. Integer et euismod felis, sit amet lobortis turpis. Praesent luctus tellus ultricies lobortis faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec non leo in turpis imperdiet vehicula ut sed risus. Integer posuere ornare libero. Integer et bibendum arcu, ac malesuada erat. Proin accumsan metus ut pellentesque laoreet. 
+
+\section{Conclusion}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis libero sed vehicula iaculis. Suspendisse laoreet nibh mauris, ac pulvinar purus venenatis vel. Vestibulum non nisl sed lacus pharetra blandit sed sed nisl. Nullam sapien enim, bibendum in tempor venenatis, porttitor convallis leo. Cras sollicitudin elit et turpis iaculis, nec malesuada quam ullamcorper. Nam faucibus eleifend urna eget elementum. Vivamus non bibendum mi.
+
+Aliquam vitae odio ac turpis euismod dapibus in non nibh. Etiam congue lobortis sapien, eleifend mollis lectus sodales in. Praesent ultricies blandit ullamcorper. Integer fermentum eu nisi vitae porta. In eu turpis faucibus, ullamcorper sem ut, maximus lacus. Pellentesque venenatis augue eget suscipit lobortis. Donec quis massa eget augue euismod maximus.
+
+Ut condimentum maximus tincidunt. Integer suscipit odio nisl, vitae suscipit massa accumsan sit amet. Curabitur pretium pharetra enim eu maximus. Nullam a convallis nulla. Praesent sollicitudin dignissim purus, sed hendrerit erat consequat et. Etiam odio eros, lacinia vitae mi nec, gravida placerat orci. Curabitur tincidunt ante in sodales pharetra. Nam et rutrum augue. Etiam aliquam, metus sit amet scelerisque vestibulum, augue metus congue mauris, vitae viverra mauris nisi sed erat. Praesent molestie fringilla enim non fringilla. Donec convallis ultricies ligula, nec elementum diam pharetra quis.
+
+Curabitur facilisis tellus eu ante dignissim, ultricies consectetur ex feugiat. Sed commodo tellus et lectus egestas, congue ornare odio finibus. Morbi quis massa lectus. Etiam non nisl fringilla, consectetur leo ut, mollis ligula. Maecenas maximus purus ac efficitur lacinia. Praesent tristique, leo ut rutrum placerat, magna dolor vehicula urna, ac faucibus orci velit vel purus. In nec congue turpis. Cras quam turpis, iaculis et fermentum at, aliquet suscipit ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In interdum hendrerit dolor ut euismod. Pellentesque eget gravida lectus. Morbi ut ex auctor, gravida dolor ut, sagittis sem. Nulla aliquet at quam et eleifend. Donec vel nibh at massa lobortis laoreet vitae sed velit. Praesent sagittis nunc id nisi malesuada luctus.
+
+Aenean nec tortor id mi maximus varius. Praesent eu neque imperdiet, suscipit tortor et, sollicitudin enim. Curabitur nisl elit, mollis sit amet erat id, euismod egestas purus. Pellentesque tempus et lectus ac sodales. Vestibulum semper arcu luctus viverra feugiat. Curabitur gravida tempus risus in consectetur. Vivamus laoreet congue feugiat. Praesent elementum in lorem vehicula sollicitudin. Integer et euismod felis, sit amet lobortis turpis. Praesent luctus tellus ultricies lobortis faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec non leo in turpis imperdiet vehicula ut sed risus. Integer posuere ornare libero. Integer et bibendum arcu, ac malesuada erat. Proin accumsan metus ut pellentesque laoreet. 
+
+% Add all entries from bib file to bibliography
+\nocite{*}
+\newpage
+\printbibliography
+
+\end{document}
