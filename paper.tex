@@ -1,60 +1,6 @@
-\documentclass[12pt, english]{article}
-%\documentclass[12pt, letterpaper, twoside, english]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{babel}
-
-% Paragraph indention
-\usepackage{indentfirst}
-\setlength{\parindent}{0em}
-\setlength{\parskip}{1em}
-
-% Do not split section headers
-\usepackage[raggedright]{titlesec}
-
-% start section from new page
-\let\stdsection\section
-\renewcommand\section{\newpage\stdsection}
-
-% Bibliography
-\usepackage[backend=bibtex]{biblatex}
-\addbibresource{db.bib}
-\AtBeginBibliography{\setcounter{maxnames}{10}}
-
-% Margins
-\usepackage[a4paper,margin=1in]{geometry}
-
-% Line spacing
-\usepackage{setspace}
-%\onehalfspacing
-\singlespace
-
-% Global redefinition of spacing in numbered lists
-\newenvironment{myenum}
-{ \begin{enumerate}
-    \setlength{\itemsep}{0pt}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}     }
-{ \end{enumerate}                  } 
-
-% Global redefinition of spacing in bulleted lists
-\newenvironment{myitem}
-{ \begin{itemize}
-    \setlength{\itemsep}{0pt}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}     }
-{ \end{itemize}                  } 
-
-% To insert images
-\usepackage[pdftex]{graphicx}
-\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
-% To avoid images jumping around on pages
-\usepackage{float}
-
-% Table alternative row color
-\usepackage[table]{xcolor}
-\definecolor{lightgray}{gray}{0.9}
+\documentclass{custom_article}
  
-\title{Essay}
+\title{Paper}
 \author{
 	Markus Kont
 }
